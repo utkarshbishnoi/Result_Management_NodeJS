@@ -1,0 +1,33 @@
+<div class="topsection d-flex justify-content-between">
+    <a href="/Teacher/AddResult" class="btn btn-info" style="margin-top:5px;">Add Result</a>
+    <a href="/" class="btn btn-danger" style="margin-top:5px;">Logout</a>
+</div>
+<h4 >All Students</h4>
+<div class="tableDiv">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Name</th>       
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Score</th>  
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%  Student.forEach(element => { %>
+            
+            <tr class="head">
+                <td><%= element.roll%></td>
+                <td><%= element.name%></td>               
+                <td><%= element.dob.toISOString().split("T")[0]%></td>
+                <td><%= element.score%></td> 
+                <td>
+                  <a href="/Teacher/Edit/<%= element._id %> "><img style="margin: 0px 5px;" src="https://img.icons8.com/material-outlined/30/000000/edit.png"/></a>
+                  <a href="/Teacher/Delete/<%= element._id %> "><img style="margin: 0px 5px;" src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/></a>
+                </td>
+              </tr>
+        <%}) %>
+    </tbody>
+  </table>
+</div>

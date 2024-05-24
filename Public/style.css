@@ -1,0 +1,111 @@
+body{
+    height: 100vh;
+    width: 100vw;
+  }
+  .navbar{
+    background-color: rgb(103, 239, 160);
+    justify-content: center;
+  }
+  .tab{
+    display: flex; 
+    align-items: center;
+  }
+  .navbar-brand{
+    color: black;
+    font-weight: bold;
+    font-size: 5vh;
+    align-items: center;
+    
+  }
+  .text{
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 3vh;
+    margin-bottom: -10px;
+  }
+  .btn{
+    margin-right: 30px;  
+    font-weight: bold;
+    height: 8vh;
+
+    
+  }
+  .optionDiv {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .optionDiv button {
+    margin: 0px 100px;  
+  }
+  .teachLog {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .teachForm {    
+    padding: 60px 40px;
+    border-radius: 10px;
+    align-items: center;
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  }
+  .teachForm input {
+    width: 300px;
+  }
+  .tableDiv {
+    margin: 10px 200px;  
+    padding: 60px 40px;
+    border-radius: 10px;
+  }
+  .table {
+    text-align: center;
+  }
+  .addStu {
+    border-width: 2px;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: 0 300px;
+  }
+  .stuTable {
+    border-width: 2px;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: 0px 200px;
+    margin-bottom: 50px;
+  }
+  h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;  
+    margin-bottom: -40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;  
+    text-align: center;  
+  }
+  .not-found-content{
+    font-size: 20px;
+    color: red;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  @media (max-width: 1200px) {
+    .navbar-brand {
+      font-size: 5vh;
+      margin-left: 0;
+    }
+    
+    .text {
+      font-size: 3vh;
+    }
+  }
